@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.1 on darwin)" generated="2024-03-12T05:39:56.556208" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Keywords" source="/Users/r.vanderhorst/Documents/GitHub/robotframework_course/lesson_3/test_keywords.robot">
+<test id="s1-t1" name="Verify Google Homepage" line="12">
+<kw name="Open Homepage And Verify Title">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-12T05:39:56.673320" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-12T05:39:56.673200" elapsed="3.643579"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-12T05:40:00.320134" level="INFO">Page title is 'Google'.</msg>
+<arg>${expected_title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-03-12T05:40:00.317277" elapsed="0.002935"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-12T05:40:00.320341" elapsed="0.107664"/>
+</kw>
+<arg>https://www.google.com</arg>
+<arg>Google</arg>
+<status status="PASS" start="2024-03-12T05:39:56.672803" elapsed="3.755411"/>
+</kw>
+<status status="PASS" start="2024-03-12T05:39:56.672553" elapsed="3.755910"/>
+</test>
+<test id="s1-t2" name="Verify Robot Framework Homepage" line="15">
+<kw name="Open Homepage And Verify Title">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-12T05:40:00.429941" level="INFO">Opening browser 'Chrome' to base url 'https://learnautomatedtesting.com'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-12T05:40:00.429789" elapsed="2.532284"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-12T05:40:03.681331" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-12T05:40:03.681472" level="FAIL">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</msg>
+<arg>${expected_title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="FAIL" start="2024-03-12T05:40:02.962513" elapsed="0.720811">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-12T05:40:03.683456" elapsed="0.000020"/>
+</kw>
+<arg>https://learnautomatedtesting.com</arg>
+<arg>Learn Testing</arg>
+<status status="FAIL" start="2024-03-12T05:40:00.428892" elapsed="3.254681">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</status>
+</kw>
+<status status="FAIL" start="2024-03-12T05:40:00.428635" elapsed="3.255156">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</status>
+</test>
+<status status="FAIL" start="2024-03-12T05:39:56.556892" elapsed="7.127187"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Test Keywords">Test Keywords</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
