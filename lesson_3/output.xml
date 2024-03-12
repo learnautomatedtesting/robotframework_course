@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.1 on darwin)" generated="2024-03-12T05:39:56.556208" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.1 on darwin)" generated="2024-03-12T08:44:38.204678" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Keywords" source="/Users/r.vanderhorst/Documents/GitHub/robotframework_course/lesson_3/test_keywords.robot">
 <test id="s1-t1" name="Verify Google Homepage" line="12">
 <kw name="Open Homepage And Verify Title">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-12T05:39:56.673320" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<msg time="2024-03-12T08:44:38.585575" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
 <arg>${url}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-12T05:39:56.673200" elapsed="3.643579"/>
+<status status="PASS" start="2024-03-12T08:44:38.585457" elapsed="11.448487"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-03-12T05:40:00.320134" level="INFO">Page title is 'Google'.</msg>
+<msg time="2024-03-12T08:44:50.567993" level="INFO">Page title is 'Google'.</msg>
 <arg>${expected_title}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-03-12T05:40:00.317277" elapsed="0.002935"/>
+<status status="PASS" start="2024-03-12T08:44:50.035885" elapsed="0.532320"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-03-12T05:40:00.320341" elapsed="0.107664"/>
+<status status="PASS" start="2024-03-12T08:44:50.568454" elapsed="0.146699"/>
 </kw>
 <arg>https://www.google.com</arg>
 <arg>Google</arg>
-<status status="PASS" start="2024-03-12T05:39:56.672803" elapsed="3.755411"/>
+<status status="PASS" start="2024-03-12T08:44:38.585064" elapsed="12.130206"/>
 </kw>
-<status status="PASS" start="2024-03-12T05:39:56.672553" elapsed="3.755910"/>
+<status status="PASS" start="2024-03-12T08:44:38.584815" elapsed="12.130655"/>
 </test>
 <test id="s1-t2" name="Verify Robot Framework Homepage" line="15">
 <kw name="Open Homepage And Verify Title">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-12T05:40:00.429941" level="INFO">Opening browser 'Chrome' to base url 'https://learnautomatedtesting.com'.</msg>
+<msg time="2024-03-12T08:44:50.717156" level="INFO">Opening browser 'Chrome' to base url 'https://learnautomatedtesting.com'.</msg>
 <arg>${url}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-12T05:40:00.429789" elapsed="2.532284"/>
+<status status="PASS" start="2024-03-12T08:44:50.716995" elapsed="2.635265"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-03-12T05:40:03.681331" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-03-12T05:40:03.681472" level="FAIL">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</msg>
+<msg time="2024-03-12T08:44:53.742315" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-12T08:44:53.742761" level="FAIL">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</msg>
 <arg>${expected_title}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="FAIL" start="2024-03-12T05:40:02.962513" elapsed="0.720811">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</status>
+<status status="FAIL" start="2024-03-12T08:44:53.352642" elapsed="0.393493">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</status>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-03-12T05:40:03.683456" elapsed="0.000020"/>
+<status status="NOT RUN" start="2024-03-12T08:44:53.746648" elapsed="0.000042"/>
 </kw>
 <arg>https://learnautomatedtesting.com</arg>
 <arg>Learn Testing</arg>
-<status status="FAIL" start="2024-03-12T05:40:00.428892" elapsed="3.254681">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</status>
+<status status="FAIL" start="2024-03-12T08:44:50.716004" elapsed="3.030812">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</status>
 </kw>
-<status status="FAIL" start="2024-03-12T05:40:00.428635" elapsed="3.255156">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</status>
+<status status="FAIL" start="2024-03-12T08:44:50.715671" elapsed="3.031367">Title should have been 'Learn Testing' but was 'Learn Automated Testing'.</status>
 </test>
-<status status="FAIL" start="2024-03-12T05:39:56.556892" elapsed="7.127187"/>
+<status status="FAIL" start="2024-03-12T08:44:38.209598" elapsed="15.537777"/>
 </suite>
 <statistics>
 <total>
