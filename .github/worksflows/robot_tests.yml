@@ -21,4 +21,4 @@ jobs:
 
     - name: Run Robot Framework tests
       run: |
-        robot --variable BROWSER:headlesschrome tests/
+        robot --variable BROWSER:headlesschrome lesson_2
